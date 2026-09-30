@@ -1,0 +1,38 @@
+{
+  "name": "opencode-rules-tui",
+  "version": "1.0.0",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evandein-cfc/opencode-rules-tui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/evandein-cfc/opencode-rules-tui/issues"
+  },
+  "homepage": "https://github.com/evandein-cfc/opencode-rules-tui#readme",
+  "description": "OpenCode TUI plugin that shows instruction/rule files currently in context",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/tui.js"
+    },
+    "./tui": {
+      "import": "./dist/tui.js"
+    }
+  },
+  "scripts": {
+    "build": "bun run scripts/build.mjs",
+    "test": "node --test --experimental-strip-types src/rule-data.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "1.14.29",
+    "@opentui/core": "0.1.107",
+    "@opentui/solid": "0.1.107",
+    "solid-js": "1.9.12"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
+}
