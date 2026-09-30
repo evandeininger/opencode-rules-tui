@@ -14,25 +14,11 @@
   "type": "module",
   "license": "MIT",
   "author": "evandeininger",
-  "keywords": [
-    "opencode",
-    "opencode-plugin",
-    "tui",
-    "rules",
-    "sidebar"
-  ],
-  "files": [
-    "dist",
-    "README.md",
-    "LICENSE"
-  ],
+  "keywords": ["opencode", "opencode-plugin", "tui", "rules", "sidebar"],
+  "files": ["dist", "README.md", "LICENSE"],
   "exports": {
-    ".": {
-      "import": "./dist/tui.js"
-    },
-    "./tui": {
-      "import": "./dist/tui.js"
-    }
+    ".": { "import": "./dist/tui.js" },
+    "./tui": { "import": "./dist/tui.js" }
   },
   "scripts": {
     "build": "bun run scripts/build.mjs",
@@ -46,7 +32,5 @@
     "@opentui/solid": "0.1.107",
     "solid-js": "1.9.12"
   },
-  "devDependencies": {
-    "typescript": "^5.8.2"
-  }
+  "devDependencies": { "typescript": "^5.8.2" }
 }
